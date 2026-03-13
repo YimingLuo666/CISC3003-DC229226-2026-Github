@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Personal Website · Home</title>
+  <link rel="stylesheet" href="css/cisc3003-SugEx03-home.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="container header-row">
+    <div class="brand">
+      <div class="logo">CL</div>
+      <div>
+        <div class="brand-title">Charles (Yiming) Luo</div>
+      </div>
+    </div>
+
+    <nav class="top-nav" aria-label="Primary">
+      <a class="active" href="cisc3003-SugEx03-home.html">Home</a>
+      <a href="cisc3003-SugEx03-profile.html">Profile</a>
+      <a href="cisc3003-SugEx03-summary.html">Summary</a>
+      <a href="cisc3003-SugEx03-showcase.html">Showcase</a>
+      <a href="cisc3003-SugEx03-qualification.html">Qualification</a>
+    </nav>
+  </div>
+</header>
+
+<!-- Main content -->
+<main id="main">
+
+  <section class="hero" style="--hero-image:url('images/face-02.jpg')">
+    <div class="container hero-content">
+      <h1>Home · About Me</h1>
+      <p>A daily-life personal page: who I am, what I enjoy, and small moments I want to keep.</p>
+      <nav class="section-nav" aria-label="On-page navigation">
+        <a href="#about">About Me</a>
+        <a href="#quick">Quick Facts</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <div class="container grid-2">
+      <div>
+        <h2>About Me</h2>
+        <p class="lead">
+          Hi, I’m Charles (Yiming) Luo. I’m a CS student who enjoys building practical things — from clean web pages
+          to research prototypes — and improving them through iteration.
+        </p>
+        <p>
+          I’m especially interested in efficient and privacy-aware AI/LLM systems, and I try to keep my work
+          well-organized and reproducible. Outside study, I like walking, taking photos, and keeping a stable routine.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Highlights</h3>
+        <ul>
+          <li>Focused on solid fundamentals and careful implementation</li>
+          <li>Enjoy polishing UI details and making pages feel “finished”</li>
+          <li>Interested in efficient fine-tuning and local deployment constraints</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="quick" class="section alt">
+    <div class="container">
+      <h2>Quick Facts</h2>
+      <div class="cards-3">
+        <article class="card">
+          <h3>What I study</h3>
+          <p>Computer Science — coursework, projects, and research-oriented experiments.</p>
+        </article>
+        <article class="card">
+          <h3>What I build</h3>
+          <p>Web pages, small tools, and ML pipelines that are readable and reproducible.</p>
+        </article>
+        <article class="card">
+          <h3>What I value</h3>
+          <p>Consistency, clarity, and steady progress through iteration.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2>My Photos (Face Photos)</h2>
+      <p class="lead">A small gallery so people can recognize me.</p>
+      <div class="gallery">
+        <img src="images/face-01.jpg" alt="Portrait photo 01" />
+        <img src="images/face-02.jpg" alt="Portrait photo 02" />
+        <img src="images/face-03.jpg" alt="Portrait photo 03" />
+        <img src="images/face-04.jpg" alt="Portrait photo 04" />
+        <img src="images/face-05.jpg" alt="Portrait photo 05" />
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section alt">
+    <div class="container">
+      <h2>Contact</h2>
+      <div class="card">
+        <p style="margin-top:0;">
+          The best way to contact me is via email or my GitHub profile (links are on the Profile page).
+        </p>
+        <p style="margin-bottom:0;">
+          If you are a potential collaborator or business partner, I’m happy to share project details and demos.
+        </p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container footer-row">
+    <div class="footer-sub">CISC3003 Web Programming - 2026: DC229226 Yiming Luo</div>
+  </div>
+</footer>
+
+</body>
+</html>

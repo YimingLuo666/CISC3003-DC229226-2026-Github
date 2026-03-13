@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RedStore | Suggested Exercise 06 Demo</title>
+    <link rel="stylesheet" href="css/cisc3003-SugEx06-demo.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&amp;display=swap">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="header" id="home">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="cisc3003-SugEx06-demo.html">
+                        <img src="images/logo.png" width="125" alt="RedStore logo">
+                    </a>
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a class="active" href="cisc3003-SugEx06-demo.html">Home</a></li>
+                        <li><a href="allProducts.html">Products</a></li>
+                        <li><a href="#offer">Offer</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="shoppingCart.html">Cart</a></li>
+                        <li><a href="loginSignup.html">Account</a></li>
+                    </ul>
+                </nav>
+                <a href="shoppingCart.html">
+                    <img src="images/cart.png" width="30" height="30" alt="Shopping cart">
+                </a>
+                <img src="images/menu.png" id="mobileMenuBtn" class="menu-icon" alt="Menu">
+            </div>
+
+            <div class="row">
+                <div class="col-2">
+                    <h1>Move Better,<br>Train Smarter.</h1>
+                    <p>
+                        RedStore presents practical sportswear and fitness accessories for students, new gym-goers,
+                        and active professionals who want reliable products, clear pricing, and a clean online shopping experience.
+                    </p>
+                    <a href="allProducts.html" class="btn">Explore Collection &#8594;</a>
+                </div>
+                <div class="col-2">
+                    <img src="images/image1.png" alt="RedStore featured sportswear collection">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-------- featured categories --------->
+    <div class="categories" id="categories">
+        <div class="small-container">
+            <h2 class="title">Featured Categories</h2>
+            <div class="row">
+                <div class="col-3">
+                    <img src="images/category-1.jpg" alt="Training apparel category">
+                    <div class="category-copy">
+                        <h3>Training Apparel</h3>
+                        <p>Lightweight tops and layers built for gym sessions, warm-ups, and daily wear.</p>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <img src="images/category-2.jpg" alt="Running shoes category">
+                    <div class="category-copy">
+                        <h3>Running Shoes</h3>
+                        <p>Stable cushioning and flexible support for road runs, campus walks, and weekend training.</p>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <img src="images/category-3.jpg" alt="Fitness gear category">
+                    <div class="category-copy">
+                        <h3>Fitness Gear</h3>
+                        <p>Smart watches, socks, and accessories that make workouts easier to plan and track.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-------- featured products --------->
+    <div class="small-container">
+        <h2 class="title" id="featured-products">Featured Products</h2>
+        <div class="row">
+            <div class="col-4">
+                <a href="productDetails.html"><img src="images/product-1.jpg" alt="Velocity Training Tee"></a>
+                <h3>Velocity Training Tee</h3>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p>$48.00</p>
+            </div>
+            <div class="col-4">
+                <a href="productDetails.html"><img src="images/product-2.jpg" alt="Urban Court Sneakers"></a>
+                <h3>Urban Court Sneakers</h3>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$62.00</p>
+            </div>
+            <div class="col-4">
+                <a href="productDetails.html"><img src="images/product-3.jpg" alt="CoreFlex Track Pants"></a>
+                <h3>CoreFlex Track Pants</h3>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p>$54.00</p>
+            </div>
+            <div class="col-4">
+                <a href="productDetails.html"><img src="images/product-4.jpg" alt="ActiveMotion Sports Tee"></a>
+                <h3>ActiveMotion Sports Tee</h3>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$45.00</p>
+            </div>
+        </div>
+
+        <h2 class="title">Latest Products</h2>
+        <div class="row">
+            <div class="col-4">
+                <a href="productDetails.html"><img src="images/product-5.jpg" alt="CloudStride Sneakers"></a>
+                <h3>CloudStride Sneakers</h3>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$72.00</p>
+            </div>
+            <div class="col-4">
+                <a href="productDetails.html"><img src="images/product-6.jpg" alt="StudioFit Black Tee"></a>
+                <h3>StudioFit Black Tee</h3>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$35.00</p>
+            </div>
+            <div class="col-4">
+                <a href="productDetails.html"><img src="images/product-7.jpg" alt="Performance Crew Socks"></a>
+                <h3>Performance Crew Socks</h3>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$18.00</p>
+            </div>
+            <div class="col-4">
+                <a href="productDetails.html"><img src="images/product-8.jpg" alt="PulseTrack Smart Watch"></a>
+                <h3>PulseTrack Smart Watch</h3>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p>$120.00</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-4">
+                <a href="productDetails.html"><img src="images/product-9.jpg" alt="Summit Sports Watch"></a>
+                <h3>Summit Sports Watch</h3>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$98.00</p>
+            </div>
+            <div class="col-4">
+                <a href="productDetails.html"><img src="images/product-10.jpg" alt="AeroRun Shoes"></a>
+                <h3>AeroRun Shoes</h3>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$86.00</p>
+            </div>
+            <div class="col-4">
+                <a href="productDetails.html"><img src="images/product-11.jpg" alt="StreetSprint Trainers"></a>
+                <h3>StreetSprint Trainers</h3>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p>$79.00</p>
+            </div>
+            <div class="col-4">
+                <a href="productDetails.html"><img src="images/product-12.jpg" alt="Recovery Joggers"></a>
+                <h3>Recovery Joggers</h3>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$42.00</p>
+            </div>
+        </div>
+    </div>
+
+    <!-------- offer --------->
+    <div class="offer" id="offer">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="images/exclusive.png" class="offer-img" alt="RedStore Smart Band 4">
+                </div>
+                <div class="col-2">
+                    <p>Exclusive Product Offer</p>
+                    <h2>RedStore Smart Band 4</h2>
+                    <p class="offer-price">$79.00</p>
+                    <small>
+                        The Smart Band 4 gives you all-day activity tracking, heart-rate monitoring, and easy workout summaries
+                        in a bright touch display that works well indoors and outdoors.
+                    </small><br>
+                    <a href="shoppingCart.html" class="btn">Buy Now &#8594;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-------- testimonial --------->
+    <div class="testimonial" id="testimonials">
+        <div class="small-container">
+            <h2 class="title">Testimonials</h2>
+            <div class="row">
+                <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                    <p>
+                        The sizing guide was accurate and my order reached Macau quickly. The Velocity tee feels light enough for workouts
+                        but still looks good for everyday use.
+                    </p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <img src="images/user-1.png" alt="Customer Amanda Lee">
+                    <h3>Amanda Lee</h3>
+                </div>
+                <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                    <p>
+                        I bought the AeroRun shoes and the Smart Band together. Product photos, prices, and ratings were easy to compare,
+                        so the mobile shopping experience felt straightforward.
+                    </p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <img src="images/user-2.png" alt="Customer Jason Chan">
+                    <h3>Jason Chan</h3>
+                </div>
+                <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                    <p>
+                        RedStore feels organized and trustworthy. I could move from the home page to products, details, cart, and account pages
+                        without getting lost, which is important for first-time buyers.
+                    </p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <img src="images/user-3.png" alt="Customer Priya Nair">
+                    <h3>Priya Nair</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-------- brands --------->
+    <div class="brands" id="brands">
+        <div class="small-container">
+            <h2 class="title">Top Brands</h2>
+            <div class="row">
+                <div class="col-5">
+                    <img src="images/logo-godrej.png" alt="Godrej brand logo">
+                </div>
+                <div class="col-5">
+                    <img src="images/logo-oppo.png" alt="Oppo brand logo">
+                </div>
+                <div class="col-5">
+                    <img src="images/logo-coca-cola.png" alt="Coca-Cola brand logo">
+                </div>
+                <div class="col-5">
+                    <img src="images/logo-paypal.png" alt="PayPal brand logo">
+                </div>
+                <div class="col-5">
+                    <img src="images/logo-philips.png" alt="Philips brand logo">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-------- footer --------->
+    <div class="footer" id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download the RedStore mobile app for Android and iOS to browse new arrivals anywhere.</p>
+                    <div class="app-logo">
+                        <img src="images/play-store.png" alt="Download on Google Play">
+                        <img src="images/app-store.png" alt="Download on the App Store">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/logo-white.png" alt="RedStore white logo">
+                    <p>
+                        Our purpose is to make reliable sportswear and training essentials accessible to customers who want
+                        value, comfort, and clear product information.
+                    </p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Delivery Policy</li>
+                        <li>Return Policy</li>
+                        <li>Partner Programme</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>YouTube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">CISC3003 Web Programming - 2026: DC229226 Yiming Luo</p>
+        </div>
+    </div>
+
+    <!-------- js for toggle menu --------->
+    <script src="js/cisc3003-SugEx06-demo.js"></script>
+</body>
+</html>

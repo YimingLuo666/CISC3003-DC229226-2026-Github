@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Personal Website · Profile</title>
+  <link rel="stylesheet" href="css/cisc3003-SugEx03-profile.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="container header-row">
+    <div class="brand">
+      <div class="logo">CL</div>
+      <div>
+        <div class="brand-title">Charles (Yiming) Luo</div>
+        <div class="brand-sub">Profile · Values, Aspirations, Interests</div>
+      </div>
+    </div>
+
+    <nav class="top-nav" aria-label="Primary">
+      <a href="cisc3003-SugEx03-home.html">Home</a>
+      <a class="active" href="cisc3003-SugEx03-profile.html">Profile</a>
+      <a href="cisc3003-SugEx03-summary.html">Summary</a>
+      <a href="cisc3003-SugEx03-showcase.html">Showcase</a>
+      <a href="cisc3003-SugEx03-qualification.html">Qualification</a>
+    </nav>
+  </div>
+</header>
+
+<!-- Main content -->
+<main id="main">
+
+  <section class="hero" style="--hero-image:url('images/face-03.jpg')">
+    <div class="container hero-content">
+      <h1>Profile</h1>
+      <p>Values, beliefs, career aspirations, interests, blog posts, and contact.</p>
+      <nav class="section-nav" aria-label="On-page navigation">
+        <a href="#values">Values</a>
+        <a href="#aspirations">Aspirations</a>
+        <a href="#interests">Interests</a>
+        <a href="#blog">Blog Posts</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </section>
+
+  <section id="values" class="section">
+    <div class="container grid-2">
+      <div class="card">
+        <h2>My Values and Beliefs</h2>
+        <p class="lead">
+          I believe good work is built on consistency, clarity, and respect for others’ time.
+        </p>
+        <ul>
+          <li><strong>Integrity:</strong> make claims supported by evidence</li>
+          <li><strong>Iteration:</strong> refine continuously until it feels right</li>
+          <li><strong>Responsibility:</strong> keep work reproducible and well-documented</li>
+        </ul>
+      </div>
+
+      <div class="profile-card">
+        <img src="images/face-01.jpg" alt="Profile photo of Charles (Yiming) Luo" />
+        <div>
+          <h3 style="margin:0;">Charles (Yiming) Luo</h3>
+          <p style="margin:.25rem 0 0;color:var(--muted);">
+            CS student · builder · interested in efficient and privacy-aware AI systems
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="aspirations" class="section alt">
+    <div class="container">
+      <h2>My Career Aspirations</h2>
+      <p class="lead">
+        I want to work on AI systems that are practical, efficient, and trustworthy — especially under real resource constraints.
+      </p>
+
+      <div class="cards-3">
+        <article class="card">
+          <h3>Research-minded engineering</h3>
+          <p>Build systems that are not only accurate, but also robust, explainable, and reproducible.</p>
+        </article>
+        <article class="card">
+          <h3>Efficiency & deployment</h3>
+          <p>Focus on parameter-efficient fine-tuning, local deployment, and reliable evaluation workflows.</p>
+        </article>
+        <article class="card">
+          <h3>Impact and collaboration</h3>
+          <p>Communicate clearly, work with diverse teams, and deliver demos with real-world impact.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="interests" class="section">
+    <div class="container">
+      <h2>My Interests and Hobbies</h2>
+      <p class="lead">Outside class, I try to keep life warm and balanced.</p>
+
+      <div class="cards-3">
+        <article class="card">
+          <h3>Daily routine</h3>
+          <p>Walking, light workouts, and keeping a stable schedule.</p>
+        </article>
+        <article class="card">
+          <h3>Creating</h3>
+          <p>Web pages, small tools, and polishing UI details that make things feel “finished”.</p>
+        </article>
+        <article class="card">
+          <h3>Exploring</h3>
+          <p>Trying new places, taking photos, and collecting small reflections.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="blog" class="section alt">
+    <div class="container">
+      <h2>My Blog Posts</h2>
+      <p class="lead">
+        Short notes from my coursework, research, and personal projects — mostly about building things carefully and improving them iteratively.
+      </p>
+
+      <div class="cards-2">
+        <article class="card">
+          <h3>Building a clean multi-page website with on-page navigation</h3>
+          <p>
+            In CISC3003, I practiced structuring content for different audiences: a clear header, readable sections, and reliable anchor links.
+            My biggest takeaway is that information architecture matters as much as visual design — a good layout reduces cognitive load.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Experiment habits that make ML work reproducible</h3>
+          <p>
+            When running training and evaluation (e.g., in PyTorch), I learned to treat logs, configs, and version control as first-class outputs.
+            Clear naming, fixed seeds where appropriate, and concise result summaries make experiments repeatable and comparable.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Efficient fine-tuning and local deployment: why details matter</h3>
+          <p>
+            My research interests center on efficient and privacy-aware LLM workflows. Even small implementation choices — prompt templates,
+            data splits, or rank settings in parameter-efficient fine-tuning — can meaningfully change results, so careful ablations are essential.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>From “it runs” to “it feels finished”: UI polish and iteration</h3>
+          <p>
+            I enjoy refining small details: spacing, typography, consistent components, and responsive behavior. Iteration is the difference between
+            a demo that works and a site that feels professional to users and stakeholders.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="container grid-2">
+      <div class="card">
+        <h2>My Contact</h2>
+        <p class="lead">I’m open to collaboration and project discussions.</p>
+        <ul>
+          <li>GitHub: <a href="https://github.com/YimingLuo666">https://github.com/YimingLuo666</a></li>
+          <li>Course forum and GitHub issues are the preferred contact channels for project discussions.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>What to include when you reach out</h3>
+        <ul style="margin-bottom:0;">
+          <li>A short intro and what you want to discuss</li>
+          <li>Relevant links (repo, doc, or demo page)</li>
+          <li>Your preferred timeline and next steps</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container footer-row">
+    <div class="footer-sub">CISC3003 Web Programming - 2026: DC229226 Yiming Luo</div>
+  </div>
+</footer>
+</body>
+</html>
