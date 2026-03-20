@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 10pt;
+}
+
+header {
+    background-color: #f5f5f5;
+    margin: 30px 30px 20px;
+    padding: 5px 10px;
+}
+
+h1 {
+    margin: 0;
+    color: #5d4037;
+    font-family: "Merriweather", "Times New Roman", serif;
+    font-size: 36px;
+}
+
+main {
+    margin: 30px;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+#sliderBox {
+    width: 300px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+#filterForm {
+    margin: 0;
+}
+
+#sliderBox p {
+    margin: 12px 0 18px;
+}
+
+#sliderBox p:last-child {
+    margin-bottom: 0;
+}
+
+#sliderBox label {
+    display: block;
+    margin-bottom: 6px;
+}
+
+.sliders {
+    width: 250px;
+}
+
+button {
+    background-color: #ef6c00;
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+    font: inherit;
+    padding: 5px 10px;
+}
+
+#imgManipulated {
+    margin: 0;
+}
+
+#imgManipulated img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+figcaption {
+    background-color: #fff;
+    margin-top: 5px;
+    padding: 5px;
+    line-height: 1.4;
+}
+
+#thumbBox {
+    border: 1px solid #ccc;
+    padding: 15px;
+    background-color: #fff;
+}
+
+#thumbBox div {
+    margin: 5px 0 15px;
+}
+
+#thumbBox div:last-child {
+    margin-bottom: 0;
+}
+
+#thumbBox img {
+    display: block;
+    cursor: pointer;
+}
+
+.tiled {
+    background-image: url(../images/stripes.jpg);
+    background-repeat: repeat;
+}
+
+@media (max-width: 1100px) {
+    main {
+        flex-direction: column;
+    }
+}

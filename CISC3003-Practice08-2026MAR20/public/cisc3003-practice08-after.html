@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CISC3003 Practice 08</title>
+<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="css/styles.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body class="tiled">
+<header>
+    <h1>Art Filters</h1>
+</header>
+<main>
+    <div id="sliderBox">
+        <form id="filterForm" action="#">
+            <p>
+                <label for="sliderOpacity">Opacity:</label>
+                <input type="range" id="sliderOpacity" min="0" max="100" value="100" class="sliders">
+                <span id="numOpacity">100</span>%
+            </p>
+            <p>
+                <label for="sliderSaturation">Saturation:</label>
+                <input type="range" id="sliderSaturation" min="1" max="300" value="100" class="sliders">
+                <span id="numSaturation">100</span>%
+            </p>
+            <p>
+                <label for="sliderBrightness">Brightness:</label>
+                <input type="range" id="sliderBrightness" min="0" max="300" value="100" class="sliders">
+                <span id="numBrightness">100</span>%
+            </p>
+            <p>
+                <label for="sliderHue">Hue Rotate:</label>
+                <input type="range" id="sliderHue" min="0" max="360" value="0" class="sliders">
+                <span id="numHue">0</span>deg
+            </p>
+            <p>
+                <label for="sliderGray">Grayscale:</label>
+                <input type="range" id="sliderGray" min="0" max="100" value="0" class="sliders">
+                <span id="numGray">0</span>%
+            </p>
+            <p>
+                <label for="sliderBlur">Blur:</label>
+                <input type="range" id="sliderBlur" min="0" max="10" value="0" class="sliders">
+                <span id="numBlur">0</span>px
+            </p>
+            <p>
+                <button type="button" id="resetFilters">Reset</button>
+            </p>
+        </form>
+    </div>
+    <figure id="imgManipulated">
+        <img id="mainImage" src="images/medium/painting1.jpg" alt="Still Life with Flowers in a Glass Vase" title="Jan Davidsz. de Heem, 1650 - 1683">
+        <figcaption>
+            <em id="captionTitle">Still Life with Flowers in a Glass Vase</em><br>
+            <span id="captionArtist">Jan Davidsz. de Heem, 1650 - 1683</span>
+        </figcaption>
+    </figure>
+    <div id="thumbBox">
+        <div><img src="images/small/painting1.jpg" alt="Still Life with Flowers in a Glass Vase" title="Jan Davidsz. de Heem, 1650 - 1683"></div>
+        <div><img src="images/small/painting2.jpg" alt="Portrait of Alida Christina Assink" title="Jan Adam Kruseman, 1833"></div>
+        <div><img src="images/small/painting3.jpg" alt="Self-portrait" title="Vincent van Gogh, 1887"></div>
+        <div><img src="images/small/painting4.jpg" alt="William II, Prince of Orange, and his Bride, Mary Stuart" title="Anthony van Dyck, 1641"></div>
+        <div><img src="images/small/painting5.jpg" alt="Milkmaid" title="Johannes Vermeer, c. 1660"></div>
+    </div>
+</main>
+<script src="js/cisc3003-practice08.js"></script>
+</body>
+</html>
