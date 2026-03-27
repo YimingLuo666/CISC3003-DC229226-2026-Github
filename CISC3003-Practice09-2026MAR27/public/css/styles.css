@@ -1,0 +1,321 @@
+.crm-page {
+    --brand-dark: #1f2a33;
+    --brand-panel: #253645;
+    --brand-accent: #ff7043;
+    --text-main: #263238;
+    --text-muted: #607d8b;
+    --line-soft: #d9e2e8;
+    --surface-main: #eef3f6;
+    --surface-card: #ffffff;
+    --surface-highlight: #f7f9fb;
+    margin: 0;
+    min-height: 100vh;
+    background: var(--surface-main);
+    color: var(--text-main);
+    font-family: "Roboto", sans-serif;
+}
+
+.crm-page * {
+    box-sizing: border-box;
+}
+
+.crm-page .app-shell {
+    min-height: 100vh;
+}
+
+.crm-page .top-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+    padding: 1rem 1.5rem;
+    background: linear-gradient(135deg, #263238 0%, #314856 100%);
+    color: #fff;
+    box-shadow: 0 10px 30px rgba(31, 42, 51, 0.18);
+}
+
+.crm-page .mdl-layout-title {
+    margin: 0;
+    font-size: 1.95rem;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+}
+
+.crm-page .mdl-layout-title span {
+    color: var(--brand-accent);
+}
+
+.crm-page .top-actions {
+    display: flex;
+    align-items: center;
+    gap: 0.9rem;
+    flex-wrap: wrap;
+}
+
+.crm-page .top-chip,
+.crm-page .search-box {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.55rem;
+    min-height: 44px;
+    padding: 0.65rem 0.95rem;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.12);
+    color: #fff;
+}
+
+.crm-page .search-box input {
+    width: 8.5rem;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    color: #fff;
+    font: inherit;
+}
+
+.crm-page .search-box input::placeholder {
+    color: rgba(255, 255, 255, 0.78);
+}
+
+.crm-page .workspace-shell {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    min-height: calc(100vh - 76px);
+}
+
+.crm-page .side-panel {
+    background: var(--brand-panel);
+    color: #fff;
+    padding: 1.25rem 0;
+}
+
+.crm-page .profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.45rem;
+    padding: 0 1.25rem 1.4rem;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.crm-page .profile-name {
+    margin: 0.4rem 0 0;
+    font-size: 1.15rem;
+    font-weight: 500;
+}
+
+.crm-page .profile span {
+    color: rgba(255, 255, 255, 0.72);
+    font-size: 0.92rem;
+}
+
+.crm-page .avatar {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    border: 4px solid rgba(255, 255, 255, 0.16);
+    object-fit: cover;
+}
+
+.crm-page .side-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+    padding: 1rem 0.7rem 0;
+}
+
+.crm-page .side-nav a {
+    display: flex;
+    align-items: center;
+    gap: 0.9rem;
+    padding: 0.78rem 1rem;
+    border-radius: 0.9rem;
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.crm-page .side-nav a:hover,
+.crm-page .side-nav a.active {
+    background: rgba(255, 255, 255, 0.12);
+    color: #fff;
+    transform: translateX(2px);
+}
+
+.crm-page .main-content {
+    padding: 1.5rem;
+}
+
+.crm-page .page-heading {
+    margin-bottom: 1.25rem;
+}
+
+.crm-page .page-heading h2 {
+    margin: 0;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.crm-page .page-heading p {
+    margin: 0.35rem 0 0;
+    color: var(--text-muted);
+}
+
+.crm-page .dashboard-grid {
+    display: grid;
+    grid-template-columns: minmax(220px, 260px) minmax(0, 1fr);
+    gap: 1.25rem;
+}
+
+.crm-page .panel {
+    overflow: hidden;
+    border-radius: 1rem;
+    background: var(--surface-card);
+    box-shadow: 0 12px 28px rgba(38, 50, 56, 0.08);
+}
+
+.crm-page .panel-heading {
+    padding: 1rem 1.25rem;
+    border-bottom: 1px solid var(--line-soft);
+    background: var(--surface-highlight);
+}
+
+.crm-page .panel-heading h3 {
+    margin: 0;
+    font-size: 1.05rem;
+    font-weight: 500;
+}
+
+.crm-page .panel-body {
+    padding: 1.1rem 1.25rem 1.25rem;
+}
+
+.crm-page .orders-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.crm-page .orders-list li + li {
+    margin-top: 0.55rem;
+}
+
+.crm-page .orders-list a {
+    display: block;
+    padding: 0.8rem 0.95rem;
+    border-radius: 0.85rem;
+    background: var(--surface-highlight);
+    color: var(--text-main);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.crm-page .orders-list a.active {
+    background: rgba(255, 112, 67, 0.14);
+    color: #bf360c;
+}
+
+.crm-page .orders-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.96rem;
+}
+
+.crm-page .orders-table caption {
+    padding-bottom: 1rem;
+    text-align: left;
+    color: var(--text-muted);
+}
+
+.crm-page .orders-table th,
+.crm-page .orders-table td {
+    padding: 0.9rem 0.85rem;
+    border-bottom: 1px solid var(--line-soft);
+    text-align: left;
+    vertical-align: middle;
+}
+
+.crm-page .orders-table thead th {
+    background: #f3f6f8;
+    font-weight: 500;
+    color: #455a64;
+}
+
+.crm-page .orders-table tbody img {
+    width: 44px;
+    height: 60px;
+    border-radius: 0.35rem;
+    object-fit: cover;
+    box-shadow: 0 4px 14px rgba(38, 50, 56, 0.14);
+}
+
+.crm-page .orders-table tfoot td {
+    font-weight: 500;
+}
+
+.crm-page .totals td {
+    font-style: italic;
+    background: #fafcfd;
+}
+
+.crm-page .grandtotals td {
+    font-weight: 700;
+    color: #5b21b6;
+    background: #f7f1ff;
+}
+
+.crm-page .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+@media (max-width: 960px) {
+    .crm-page .workspace-shell {
+        grid-template-columns: 1fr;
+    }
+
+    .crm-page .dashboard-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 640px) {
+    .crm-page .top-header {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .crm-page .top-actions {
+        justify-content: stretch;
+    }
+
+    .crm-page .top-chip,
+    .crm-page .search-box {
+        width: 100%;
+    }
+
+    .crm-page .search-box input {
+        width: 100%;
+    }
+
+    .crm-page .main-content {
+        padding: 1rem;
+    }
+
+    .crm-page .orders-table {
+        font-size: 0.88rem;
+    }
+
+    .crm-page .orders-table th,
+    .crm-page .orders-table td {
+        padding: 0.75rem 0.55rem;
+    }
+}
