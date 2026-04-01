@@ -1,0 +1,13 @@
+.page-summary .hero-section {
+  background:
+    radial-gradient(circle at bottom right, rgba(199, 119, 67, 0.18), transparent 26%),
+    linear-gradient(135deg, rgba(255, 253, 248, 0.98), rgba(232, 242, 239, 0.96));
+}
+
+.page-summary .timeline-item {
+  background: rgba(255, 255, 255, 0.78);
+}
+
+.page-summary #future-directions .info-card {
+  border-color: rgba(199, 119, 67, 0.18);
+}

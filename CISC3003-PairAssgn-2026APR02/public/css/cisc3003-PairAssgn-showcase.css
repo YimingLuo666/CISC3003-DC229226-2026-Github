@@ -1,0 +1,13 @@
+.page-showcase .hero-section {
+  background:
+    radial-gradient(circle at top right, rgba(199, 119, 67, 0.18), transparent 24%),
+    linear-gradient(135deg, rgba(255, 253, 248, 0.98), rgba(229, 238, 233, 0.95));
+}
+
+.page-showcase #portfolio-projects .preview-card {
+  height: 100%;
+}
+
+.page-showcase #accomplishments .stat-card strong {
+  font-size: 2rem;
+}

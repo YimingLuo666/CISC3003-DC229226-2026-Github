@@ -1,0 +1,13 @@
+.page-qualification .hero-section {
+  background:
+    radial-gradient(circle at top left, rgba(18, 60, 61, 0.13), transparent 24%),
+    linear-gradient(135deg, rgba(255, 253, 248, 0.98), rgba(236, 241, 236, 0.96));
+}
+
+.page-qualification #services .offer-card {
+  height: 100%;
+}
+
+.page-qualification #history .timeline-item {
+  background: rgba(255, 255, 255, 0.82);
+}

@@ -1,0 +1,14 @@
+.page-profile .hero-section {
+  background:
+    radial-gradient(circle at top left, rgba(18, 60, 61, 0.12), transparent 25%),
+    linear-gradient(135deg, rgba(255, 253, 248, 0.98), rgba(239, 233, 223, 0.94));
+}
+
+.page-profile #blog-posts .blog-copy {
+  min-height: 100%;
+}
+
+.page-profile #contact {
+  background:
+    linear-gradient(135deg, rgba(247, 241, 232, 0.98), rgba(231, 239, 235, 0.95));
+}

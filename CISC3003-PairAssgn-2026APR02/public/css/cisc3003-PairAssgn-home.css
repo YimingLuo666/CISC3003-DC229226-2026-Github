@@ -1,0 +1,25 @@
+.page-home .hero-section {
+  background:
+    radial-gradient(circle at top right, rgba(199, 119, 67, 0.16), transparent 28%),
+    linear-gradient(135deg, rgba(255, 253, 248, 0.98), rgba(227, 240, 235, 0.92));
+}
+
+.page-home #featured-work .preview-media img {
+  aspect-ratio: 4 / 3;
+}
+
+.page-home #closing-statement {
+  background:
+    linear-gradient(135deg, rgba(18, 60, 61, 0.96), rgba(38, 92, 93, 0.9));
+}
+
+.page-home #closing-statement h2,
+.page-home #closing-statement p {
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.page-home #closing-statement .button-secondary {
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.22);
+}

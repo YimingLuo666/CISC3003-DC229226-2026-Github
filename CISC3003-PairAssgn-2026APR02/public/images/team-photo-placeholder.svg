@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540" role="img" aria-labelledby="title desc">
+  <title id="title">Team photo placeholder</title>
+  <desc id="desc">Placeholder image for the NovaPair Web Studio team photo.</desc>
+  <rect width="960" height="540" fill="#e8eef5"/>
+  <rect x="30" y="30" width="900" height="480" rx="24" fill="#c8d6e5" stroke="#6b7c93" stroke-width="4"/>
+  <circle cx="330" cy="220" r="72" fill="#ffffff" stroke="#6b7c93" stroke-width="4"/>
+  <circle cx="630" cy="220" r="72" fill="#ffffff" stroke="#6b7c93" stroke-width="4"/>
+  <rect x="250" y="310" width="160" height="110" rx="24" fill="#ffffff" stroke="#6b7c93" stroke-width="4"/>
+  <rect x="550" y="310" width="160" height="110" rx="24" fill="#ffffff" stroke="#6b7c93" stroke-width="4"/>
+  <text x="480" y="110" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="34" fill="#233142">NovaPair Web Studio</text>
+  <text x="480" y="470" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="26" fill="#233142">Replace with a real team photo</text>
+</svg>
