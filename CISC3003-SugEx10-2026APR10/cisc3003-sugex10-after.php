@@ -49,6 +49,13 @@ function customerAddress(array $customer)
     return $address;
 }
 
+function currentPagePath()
+{
+    $scriptName = $_SERVER['PHP_SELF'] ?? 'cisc3003-sugex10-after.php';
+
+    return basename($scriptName);
+}
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -91,7 +98,7 @@ function customerAddress(array $customer)
                                 <?php foreach ($customers as $customer) : ?>
                                     <tr>
                                         <td class="mdl-data-table__cell--non-numeric">
-                                            <a class="customer-link" href="cisc3003-sugex10-after.php?customer_id=<?php echo h($customer['id']); ?>">
+                                            <a class="customer-link" href="<?php echo h(currentPagePath()); ?>?customer_id=<?php echo h($customer['id']); ?>">
                                                 <?php echo h(customerFullName($customer)); ?>
                                             </a>
                                         </td>

@@ -12,6 +12,24 @@ function normalizeText($value)
         return $value;
     }
 
+    $windowsByteMap = [
+        "\x8A" => 'Š',
+        "\x8C" => 'Ś',
+        "\x8D" => 'Ť',
+        "\x8E" => 'Ž',
+        "\x9A" => 'š',
+        "\x9C" => 'ś',
+        "\x9D" => 'ť',
+        "\x9E" => 'ž',
+        "\x9F" => 'Ÿ',
+    ];
+
+    $value = strtr($value, $windowsByteMap);
+
+    if (preg_match('//u', $value)) {
+        return $value;
+    }
+
     if (function_exists('iconv')) {
         $encodings = ['Windows-1250', 'ISO-8859-2', 'Windows-1252', 'ISO-8859-1'];
 
