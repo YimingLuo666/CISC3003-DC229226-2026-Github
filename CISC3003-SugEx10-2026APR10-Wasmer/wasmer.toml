@@ -1,0 +1,15 @@
+[package]
+name = "3357736141lym/cisc3003-sugex10-path01"
+version = "0.1.0"
+description = "CISC3003 Suggested Exercise 10 Wasmer deployment package"
+
+[fs]
+"/app" = "app"
+
+[[command]]
+name = "serve"
+module = "php/php:php"
+runner = "wasi"
+
+[command.annotations.wasi]
+main-args = ["-S", "0.0.0.0:8080", "-t", "/app"]
