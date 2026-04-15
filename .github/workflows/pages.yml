@@ -1,0 +1,69 @@
+name: Deploy GitHub Pages
+
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Prepare site
+        run: |
+          mkdir -p "_site/CISC3003-IndAssgn-2026MAR01"
+          mkdir -p "_site/CISC3003-PairAssgn-2026APR02"
+
+          cp -r "CISC3003-IndAssgn-2026MAR01/public/." "_site/CISC3003-IndAssgn-2026MAR01/"
+          cp -r "CISC3003-PairAssgn-2026APR02/public/." "_site/CISC3003-PairAssgn-2026APR02/"
+
+          touch "_site/.nojekyll"
+
+          cat > "_site/index.html" <<'EOF'
+          <!doctype html>
+          <html lang="en">
+          <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <title>CISC3003 Projects</title>
+          </head>
+          <body>
+            <h1>CISC3003 Projects</h1>
+            <ul>
+              <li><a href="./CISC3003-IndAssgn-2026MAR01/">Individual Assignment</a></li>
+              <li><a href="./CISC3003-PairAssgn-2026APR02/">Pair Assignment</a></li>
+            </ul>
+          </body>
+          </html>
+          EOF
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: "_site"
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
