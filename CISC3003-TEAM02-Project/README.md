@@ -1,4 +1,4 @@
-# CISC3003-GROUP02-Project-Complete
+# CISC3003-TEAM02-Project-Complete
 
 This folder is the merged full-stack project assembled from the separate `frontend` and `Backend` folders.
 
