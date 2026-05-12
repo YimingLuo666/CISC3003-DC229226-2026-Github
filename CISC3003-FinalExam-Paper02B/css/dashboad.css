@@ -1,0 +1,49 @@
+/* Dashboard-specific styles. The filename follows the exam deliverable spelling. */
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+    width: min(1120px, calc(100% - 32px));
+    margin: 32px auto;
+}
+
+.dashboard-card {
+    padding: 26px;
+    border: 1px solid #d9dfeb;
+    border-radius: 8px;
+    background: #ffffff;
+    box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
+}
+
+.dashboard-card dl {
+    display: grid;
+    grid-template-columns: 150px minmax(0, 1fr);
+    gap: 10px 16px;
+    margin: 0;
+}
+
+.dashboard-card dt {
+    color: #5c667a;
+    font-weight: 700;
+}
+
+.dashboard-card dd {
+    margin: 0;
+}
+
+.danger-link {
+    border-color: #b4232f;
+    background: #b4232f;
+}
+
+.danger-link:hover {
+    border-color: #861923;
+    background: #861923;
+}
+
+@media (max-width: 760px) {
+    .dashboard-grid,
+    .dashboard-card dl {
+        grid-template-columns: 1fr;
+    }
+}

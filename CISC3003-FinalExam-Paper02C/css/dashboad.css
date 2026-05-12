@@ -1,0 +1,86 @@
+/* ============================================================
+   CISC3003 Final Exam Paper 02 - Scenario C
+   Dashboard-specific styles (loaded in addition to styles.css).
+   The filename "dashboad.css" follows the official deliverable
+   list exactly.
+   ============================================================ */
+
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    align-items: center;
+    padding: 40px max(24px, 8vw);
+    background: linear-gradient(135deg, #10213f 0%, #1f4ea8 100%);
+    color: #ffffff;
+}
+
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 22px;
+    width: min(1120px, calc(100% - 32px));
+    margin: 32px auto;
+}
+
+.dashboard-card {
+    padding: 26px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background: #ffffff;
+    box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
+    display: flex;
+    flex-direction: column;
+}
+
+.dashboard-card h2 {
+    margin-top: 0;
+    color: #10213f;
+}
+
+.dashboard-card dl {
+    margin: 0 0 14px;
+}
+
+.dashboard-card dt {
+    margin-top: 8px;
+    color: var(--muted);
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+
+.dashboard-card dd {
+    margin: 2px 0 0;
+    font-weight: 700;
+}
+
+.dashboard-card p {
+    flex: 1;
+}
+
+.dashboard-card .button-link {
+    align-self: flex-start;
+    margin-top: 14px;
+}
+
+.danger-link {
+    background: #c0392b;
+    border-color: #c0392b;
+}
+
+.danger-link:hover {
+    background: #962d22;
+    border-color: #962d22;
+}
+
+@media (max-width: 760px) {
+    .dashboard-header {
+        display: block;
+        padding: 28px 18px;
+    }
+
+    .dashboard-header .quick-actions {
+        margin-top: 18px;
+    }
+}

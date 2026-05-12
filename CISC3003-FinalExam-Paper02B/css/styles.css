@@ -1,0 +1,250 @@
+/* Base layout */
+:root {
+    color-scheme: light;
+    --bg: #f5f7fb;
+    --surface: #ffffff;
+    --text: #18202f;
+    --muted: #5c667a;
+    --border: #d9dfeb;
+    --primary: #1f6feb;
+    --primary-dark: #174ea6;
+    --success-bg: #e7f7ed;
+    --success-text: #146c2e;
+    --error-bg: #fdebec;
+    --error-text: #9f1d28;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: var(--bg);
+    color: var(--text);
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+a {
+    color: var(--primary);
+}
+
+/* Header and navigation */
+.site-header,
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    align-items: center;
+    padding: 40px max(24px, 8vw);
+    background: #10213f;
+    color: #ffffff;
+}
+
+.compact-header {
+    padding-top: 28px;
+    padding-bottom: 28px;
+}
+
+.eyebrow {
+    margin: 0 0 6px;
+    color: #9cc1ff;
+    font-size: 0.82rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+h1,
+h2 {
+    margin-top: 0;
+    line-height: 1.2;
+}
+
+h1 {
+    margin-bottom: 10px;
+    font-size: clamp(2rem, 3vw, 3rem);
+}
+
+.header-copy {
+    max-width: 720px;
+    margin: 0;
+    color: #dbe7ff;
+}
+
+.quick-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+}
+
+button,
+.button-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 42px;
+    padding: 10px 18px;
+    border: 1px solid var(--primary);
+    border-radius: 6px;
+    background: var(--primary);
+    color: #ffffff;
+    font: inherit;
+    font-weight: 700;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button:hover,
+.button-link:hover {
+    background: var(--primary-dark);
+    border-color: var(--primary-dark);
+}
+
+.outline-button,
+.text-link {
+    border: 1px solid rgba(255, 255, 255, 0.55);
+    background: transparent;
+    color: #ffffff;
+}
+
+.text-link {
+    display: inline-flex;
+    align-items: center;
+    min-height: 42px;
+    padding: 10px 14px;
+    border-radius: 6px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.outline-button:hover,
+.text-link:hover {
+    background: rgba(255, 255, 255, 0.12);
+}
+
+/* Main content */
+.page-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.6fr) minmax(280px, 0.8fr);
+    gap: 24px;
+    width: min(1120px, calc(100% - 32px));
+    margin: 32px auto;
+}
+
+.single-panel {
+    width: min(720px, calc(100% - 32px));
+    margin: 32px auto;
+}
+
+.panel {
+    padding: 26px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background: var(--surface);
+    box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
+}
+
+.checklist ul {
+    padding-left: 20px;
+}
+
+.small-note {
+    color: var(--muted);
+    font-size: 0.95rem;
+}
+
+code {
+    padding: 2px 5px;
+    border-radius: 4px;
+    background: #eef2f7;
+}
+
+/* Forms */
+.form-row {
+    margin-bottom: 18px;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 700;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 11px 12px;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    background: #ffffff;
+    color: var(--text);
+    font: inherit;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input:focus,
+textarea:focus {
+    outline: 3px solid rgba(31, 111, 235, 0.2);
+    border-color: var(--primary);
+}
+
+.client-message {
+    min-height: 24px;
+    margin: 0 0 12px;
+    color: var(--error-text);
+    font-weight: 700;
+}
+
+/* Notices */
+.notice {
+    margin-bottom: 20px;
+    padding: 14px 16px;
+    border-radius: 6px;
+}
+
+.notice ul {
+    margin-bottom: 0;
+}
+
+.notice-success {
+    background: var(--success-bg);
+    color: var(--success-text);
+}
+
+.notice-error {
+    background: var(--error-bg);
+    color: var(--error-text);
+}
+
+/* Footer */
+.site-footer {
+    width: min(1120px, calc(100% - 32px));
+    margin: 24px auto;
+    padding: 18px;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    text-align: center;
+}
+
+@media (max-width: 760px) {
+    .site-header,
+    .dashboard-header {
+        display: block;
+        padding: 28px 18px;
+    }
+
+    .quick-actions {
+        margin-top: 18px;
+    }
+
+    .page-grid {
+        grid-template-columns: 1fr;
+    }
+}
